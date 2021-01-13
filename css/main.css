@@ -13,6 +13,7 @@
   --dark: #000000ff;
   --dark-blue: #3b5568ff;
   --light-blue: #84adaeff;
+  --trans-dark: rgba(0, 0, 0, 0.85);
 }
 
 body {
@@ -21,6 +22,7 @@ body {
 
 body a {
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body p {
@@ -40,7 +42,7 @@ header {
 header .container {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: var(--trans-dark);
   text-align: center;
   padding-top: 35vh;
 }
@@ -60,11 +62,12 @@ header .container h1 {
   padding: 0;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 #menulogo img {
-  width: 10vh;
-  height: 5vh;
+  width: 20vh;
+  height: 10vh;
   float: left;
   padding: 1.5vh 2vh;
 }
@@ -82,7 +85,7 @@ nav li {
   font-size: 2rem;
   font-weight: bold;
   text-align: right;
-  padding: 0 12vh;
+  padding: 0 10vh;
 }
 
 nav a {
@@ -98,11 +101,104 @@ nav a {
 #showcase .container {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: var(--trans-dark);
+}
+
+.kodelogoer {
+  width: 100%;
+  padding-top: 12vh;
+  display: flex;
+  justify-content: center;
 }
 
 #opinion {
   width: 100%;
-  height: 75vh;
+  padding: 10vh;
   background: var(--light);
+}
+
+article .container {
+  width: 100%;
+  height: 85vh;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-rows: 50vh, auto;
+}
+
+.box2 {
+  background-color: var(--dark);
+  color: var(--light);
+  grid-row: 3/6;
+  grid-column: 1/5;
+  grid-auto-rows: 50vh;
+  position: relative;
+}
+
+.box1 {
+  background-color: var(--light);
+  grid-row: 1/4;
+  grid-column: 4/8;
+}
+
+.animation {
+  padding: 2vh;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.flerevedmere {
+  padding: 2vh;
+}
+
+.flerevedmere h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.githubcat {
+  background: url('../img/githubcat_white.png') no-repeat bottom right;
+  background-size: 25vh 25vh;
+}
+
+.text1 {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  align-self: center;
+  justify-self: end;
+}
+
+.pil1 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: start;
+}
+
+.text2 {
+  grid-row: 5/6;
+  grid-column: 6/8;
+  align-self: center;
+  justify-self: end;
+}
+
+.pil2 {
+  grid-row: 5/6;
+  grid-column: 5/6;
+  align-self: center;
+  justify-self: end;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--dark-blue);
+  justify-items: center;
+  padding: 2vh;
+}
+
+.footer a {
+color: var(--dark);
 }
