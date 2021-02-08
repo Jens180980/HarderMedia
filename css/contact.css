@@ -1,0 +1,102 @@
+/*********************
+     GENERAL SETTINGS 
+**********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap');
+  
+  :root{
+    --blue:#246eb9;
+    --orange: #ff6600;
+    --light: #e6e6e6;
+    --dark: #282828;
+    --blue-trans: #246eb9AA;
+    --orange-trans: #ff6600AA;
+    --light-trans: #e6e6e6AA;
+    --dark-trans: #000000DD;
+  }
+  body {
+    font-family: "Kodchasan";
+  }
+  
+  body a {
+    text-decoration: none;
+  }
+  .container-main{
+    width: 100%;
+    margin: auto;
+  }
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style-type: none;
+  }
+
+  /*********************
+     HEADER 
+**********************/
+  .container-logolong {
+    display: flex;
+    width: 100%;  
+    background-image: url(../img/Background_dark.jpg);
+  }
+  .container-logolong img{
+      margin: 1em 2em;
+      height: 15vh;
+  }
+  .container-logolong h1{
+      color: var(--light);
+      font-size: 4rem;
+      margin: 35px 0 0 200px;
+  }
+
+ /*********************
+     MAIN CONTENT 
+**********************/
+
+.content-wrapper{
+    width: 90%;
+    margin: 4em auto;
+    background-color: var(--blue-trans);
+}
+.construction{
+    width: 50%;
+    margin: auto;
+}
+.contact-info{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.contact-info li{
+    font-size: 2rem;
+}
+
+  /*********************
+     FOOTER 
+**********************/
+footer{
+    margin: 0;
+    }
+    footer img{
+      display: block;
+      width: 100%;
+    }
+    .showcase{
+      z-index: -1;
+      visibility: visible;
+    }
+    .showcase img{
+      width: 100%;
+    }
+    .text-footer h2{
+      color: var(--light);
+      font-size: 2rem;
+      text-align: center;
+      padding-bottom: 2em;
+    }

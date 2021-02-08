@@ -1,5 +1,5 @@
 # HarderMedia
 <br>
-Exercise project with fake web developer company
+Started as exercise with false companyname, but now my portfoliopage
 
 My very first Github project

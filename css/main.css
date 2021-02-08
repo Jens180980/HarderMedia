@@ -1,4 +1,6 @@
-
+/*********************
+     GENERAL SETTINGS 
+**********************/
 * {
   margin: 0;
   padding: 0;
@@ -32,173 +34,6 @@ body a {
   background-image: url(../img/Background_dark.jpg);
 }
 
-/*****************
-     DROPDOWN 
-******************/
-/* MAKES STICKY MENU-WRAP ABSOLUTE TO ITSELF */
-.fix-wrapper{
-  position: absolute;
-  top: 105vh;
-  right: 0;
-  width: 300px;
-  height: 1300px; /* CONTROLS HOW FAR MENU-ICON SCROLLS DOWN */
-}
-/* TOOGLES MENU ON AND OFF */
-.on-off {
-  position: absolute;
-  top:5px;
-  right: 5px;
-  width: 120px;
-  height: 120px;
-  opacity: 0;
-  z-index: 4;
-  cursor: pointer;
-  margin: 0;
-}
-/* MAKES ENTIRE MENU AND LOGO STICK TO TOP OF SCREEN */
-.menu-wrap{
-  position: sticky;
-  top: 0;   
-  
-}
-/* SETS INITIAL MENU SCREEN TO 0 SCALE AND PREPARES START-LOCATION AND DURATION OF TRANSITION */
-.menu{
-  transform: scale(0);
-  transform-origin: top right;
-  transition-duration: 1.0s;  
-}
-/* PLACES AND SIZES BUTTON */
-.menu-wrap .btn img{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 35%;
-  z-index: 2;
-}
-/* PLACES QUARTER-CIRCLE */
-.menu-wrap .menu .overlay{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 0;
-}
-/* PLACES, SIZES AND COLORS ICONS */
-.menu-wrap .menu .item-contact{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 40px;
-  right: 210px;
-  width: 20%;
-  height: 20%;
-  z-index: 1;
-}
-.menu-wrap .menu .item-contact svg{
-  width: 50px;
-  height: 40px;
-  fill: var(--blue);
-}
-.menu-wrap .menu .item-about{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 120px;
-  right: 170px;
-  width: 20%;
-  height: 20%;
-  z-index: 1;
-}
-.menu-wrap .menu .item-about svg{
-  width: 60px;
-  height: 50px;
-  fill: var(--blue);
-}
-.menu-wrap .menu .item-codepen{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 200px;
-  right: 110px;
-  width: 20%;
-  height: 20%;
-  z-index: 1;
-}
-.menu-wrap .menu .item-codepen svg{
-  width: 55px;
-  height: 55px;
-  fill: var(--blue);
-}
-.menu-wrap .menu .item-github{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 245px;
-  right: 20px;
-  width: 20%;
-  height: 20%;
-  z-index: 1;
-}
-.menu-wrap .menu .item-github svg{
-  width: 55px;
-  height: 55px;
-  fill: var(--blue);
-}
-/* PLACES, SIZES AND HIDES ICON-TEXT */
-.menu-text {
-  position: absolute;
-  top:130px;
-  right: 20px;
-  width: 110px;
-  color: var(--light);
-  font-family: kodchasan;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  opacity:0;
-}
-/* MAKES MENU APPEAR AND DISAPPEAR WHEN CLICKING LOGO (REALLY CHECKBOX) */
-.on-off:checked ~ .menu{
-  transform: scale(1);
-  transform-origin: top right;
-  transition-duration: 1.0s;   
-}
-/* CHANGES COLOR OF ICONS ON HOVER */
-.menu-wrap .menu .item-contact:hover svg {
-  fill: var(--light);   
-}
-.menu-wrap .menu .item-about:hover svg {
-  fill: var(--light);   
-}
-.menu-wrap .menu .item-codepen:hover svg {
-  fill: var(--light);   
-}
-.menu-wrap .menu .item-github:hover svg {
-  fill: var(--light);   
-}
-/* MAKES ICON-TEXT APPEAR ON ICON-HOVER */
-.menu-wrap .menu .item-contact:hover ~ .contact {
-  opacity: 1;   
-}
-.menu-wrap .menu .item-about:hover ~ .about {
-  opacity: 1;   
-}
-.menu-wrap .menu .item-codepen:hover ~ .codepen {
-  opacity: 1;   
-}
-.menu-wrap .menu .item-github:hover ~ .github {
-  opacity: 1;   
-}
-/* MAKES LOGO ROTATE ON HOVER */
-.menu-wrap .on-off:hover ~ .btn img{
-  transform: rotate(360deg);
-  transition-duration: 1.0s;
-}
-
 /*********************
      WELCOME SCREEN 
 **********************/
@@ -207,6 +42,9 @@ body a {
   margin: auto;
   padding-top: 10vh;
   width: 80%;
+}
+.container-logolong img{
+  width: 100%;
 }
 .container-swipe{
   position: absolute;
@@ -276,7 +114,7 @@ article h1{
   margin-left: 8vh;
   grid-row: 3/6;
   grid-column: 1/5;
-  position: relative;
+  /* position: relative; */
 }
 
 /* BOX-TEXT SETTINGS */
@@ -292,16 +130,16 @@ article h1{
 /* TITLE SETTINGS */
 .title1 {
   grid-row: 1/2;
-  grid-column: 1/3;
+  grid-column: 1/4;
   align-self: end;
   justify-self: end;
   color: var(--light);
 }
 .title2 {
   grid-row: 5/6;
-  grid-column: 5/7;
+  grid-column: 5/8;
   align-self: top;
-  justify-self: end;
+  justify-self: start;
   color: var(--light);
 }
 #indent{
@@ -329,4 +167,30 @@ footer img{
   font-size: 2rem;
   text-align: center;
   padding-bottom: 2em;
+}
+
+/*********************
+     MEDIA QUERIES
+**********************/
+
+@media (max-width: 1100px) {
+
+article {
+      display:block;
+      margin-top: 2vh;
+}
+/* TITLE SETTINGS */
+.title1 {
+  text-align: center;
+  color: var(--light);
+}
+.title2 {
+  text-align: center;
+  margin-top: 2vh;
+  color: var(--light);
+}
+#indent {
+  margin-left: 0;
+}
+
 }
