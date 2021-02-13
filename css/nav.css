@@ -4,11 +4,11 @@
 ******************/
 /* MAKES STICKY MENU-WRAP ABSOLUTE TO ITSELF */
 .fix-wrapper{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 300px;
-    height: 100%; /* CONTROLS HOW FAR MENU-ICON SCROLLS DOWN */
+    /* height: 100%; CONTROLS HOW FAR MENU-ICON SCROLLS DOWN */
   }
   /* TOOGLES MENU ON AND OFF */
   .on-off {
@@ -18,7 +18,7 @@
     width: 120px;
     height: 120px;
     opacity: 0;
-    z-index: 4;
+    z-index: 10;
     cursor: pointer;
     margin: 0;
   }
@@ -58,7 +58,7 @@
     z-index: 0;
   }
   /* PLACES, SIZES AND COLORS ICONS */
-  .menu-wrap .menu .item-contact{
+  .menu-wrap .menu .item-playground{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -69,10 +69,14 @@
     height: 20%;
     z-index: 1;
   }
-  .menu-wrap .menu .item-contact svg{
+  .menu-wrap .menu .item-playground svg{
+    stroke:var(--blue);
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:2.5px;
     width: 50px;
     height: 40px;
-    fill: var(--blue);
+    fill: none;
   }
   .menu-wrap .menu .item-about{
     position: absolute;
@@ -125,7 +129,7 @@
   /* PLACES, SIZES AND HIDES ICON-TEXT */
   .menu-text {
     position: absolute;
-    top:130px;
+    top:110px;
     right: 20px;
     width: 110px;
     color: var(--light);
@@ -142,8 +146,8 @@
     transition-duration: 1.0s;   
   }
   /* CHANGES COLOR OF ICONS ON HOVER */
-  .menu-wrap .menu .item-contact:hover svg {
-    fill: var(--light);   
+  .menu-wrap .menu .item-playground:hover svg {
+    stroke: var(--light);   
   }
   .menu-wrap .menu .item-about:hover svg {
     fill: var(--light);   
@@ -155,7 +159,7 @@
     fill: var(--light);   
   }
   /* MAKES ICON-TEXT APPEAR ON ICON-HOVER */
-  .menu-wrap .menu .item-contact:hover ~ .contact {
+  .menu-wrap .menu .item-playground:hover ~ .playground {
     opacity: 1;   
   }
   .menu-wrap .menu .item-about:hover ~ .about {

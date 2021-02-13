@@ -1,0 +1,245 @@
+/*********************
+     GENERAL SETTINGS 
+**********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap');
+  
+  :root{
+    --blue:#246eb9;
+    --orange: #ff6600;
+    --light: #e6e6e6;
+    --dark: #282828;
+    --blue-trans: #246eb9DD;
+    --orange-trans: #ff6600AA;
+    --light-trans: #e6e6e6AA;
+    --dark-trans: #000000DD;
+  }
+  html{
+    height: 100%;
+  }
+  body {
+    position: relative;
+    font-family: "Kodchasan";
+    background: url(../img/code.jpg) no-repeat center fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  body a:hover {
+    color: var(--orange);
+  }
+  .container-main{
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+    ul{
+      list-style-type: none;
+  }
+ 
+  /*********************
+     HEADER 
+**********************/
+
+  .container-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;  
+    background-color: var(--blue-trans);
+  }
+  .container-header img{
+      margin: 1em 2em;
+      height: 15vh;
+  }
+  .container-header h1{
+      color: var(--light);
+      font-size: 4rem;
+      letter-spacing: 0.3em;
+      margin: 35px 150px 0 20px;
+      justify-self: end;
+  }
+
+ /*********************
+     MAIN CONTENT 
+**********************/
+.construction{
+  width: 100%;
+  margin: auto;
+  color: var(--light);
+  text-align: center;
+  font-size: 2rem;
+}
+.content-wrapper{
+  position: relative;
+    width: 80%;
+    margin: 4em auto;
+    background-color: var(--blue-trans);
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
+    border-top: 2px solid rgba(256, 256, 256, 0.4);
+    border-left: 2px solid rgba(256, 256, 256, 0.4);
+}
+.about{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+}
+.img-wrap1{
+  margin: 3em;
+}
+.img-wrap1 h2{
+padding: 0 0 1em 0;
+text-align: center;
+font-size: 3rem;
+color: var(--light);
+text-shadow: 1px 1px black;
+}
+.img-wrap1 img{
+  display: block;
+  margin: auto;
+  padding: 1em;
+  border-radius: 25px;
+}
+.img-wrap2{
+  margin: 2em;
+}
+.img-wrap2 h2{
+padding: 0 0 1em 0;
+text-align: center;
+font-size: 3rem;
+color: var(--light);
+text-shadow: 1px 1px black;
+}
+.img-wrap2 img{
+  margin: 1em;
+  width: 90%;
+  border-radius: 25px;
+}
+.text-wrap1{
+  width: 100%;
+}
+.text-wrap1 p{
+  color: var(--light);
+  font-size: 2rem;
+  margin: 1em 2em 3em 0;
+}
+.text-wrap1 p:first-child{
+  margin-top: 6rem;
+}
+.text-wrap1 span{
+  color: var(--orange);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.text-wrap2{
+  width: 100%;
+}
+.text-wrap2 p{
+  color: var(--light);
+  font-size: 1.5rem;
+  margin: 1em 2em 1em 0;
+}
+.text-wrap2 p:first-child{
+  margin-top: 14rem;
+}
+.text-wrap2 span{
+  color: var(--orange);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.contact-info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 1em;
+    text-align: center;
+    color: var(--light);
+}
+.contact-info a{
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--light);
+    transition: color 0.3s ease;
+}
+
+/*********************
+     FOOTER 
+**********************/
+
+footer{
+    margin: 0;
+    width: 100%;  
+}
+    footer img{
+      display: block;
+      width: 100%;
+}
+.text-footer p{
+      color: var(--light);
+      font-size: 2rem;
+      text-align: center;
+      padding-bottom: 2em;
+}
+
+/*********************
+     MEDIA QUERIES
+**********************/
+
+@media (max-width: 1150px) {
+.container-header{
+  display: block;
+  padding-bottom: 1em;
+}
+.container-header h1{
+  margin: 0 20px 0 20px;
+  font-size: 3rem;
+  text-align: center;
+}  
+.contact-info{
+  display: block;
+  width: 100%;
+}
+.contact-info li{
+  margin-bottom: 0.5em;
+}
+.about{
+  display: block;
+}
+.img-wrap1 img{
+  margin: auto;
+  display: inline;
+  width: 90px;
+  padding: 0;
+}
+.text-wrap1 p{  
+  margin: 0;
+  padding: 0.6em 0.3em 0.6em 0.3em;
+  text-align: center;
+}
+.text-wrap1 p:nth-child(odd){
+ background-color: var(--dark-trans);
+}
+.text-wrap2 p{  
+  margin: 0;
+  padding: 0.6em 0.3em 0.6em 0.3em;
+  text-align: center;
+}
+.text-wrap2 p:nth-child(odd){
+ background-color: var(--dark-trans);
+}
+
+} /*End of media query*/
