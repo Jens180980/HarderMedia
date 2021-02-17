@@ -18,9 +18,6 @@
       <div class="container-logolong">
         <img src="./img/HM_logo_LongBigWhite.png" alt="">
       </div>
-      <div style="visibility: hidden" class="container-swipe">
-        <p >SWIPE ELLER SCROLL >></p>
-      </div>
       <section class="showcase">
         <img src="./img/AtDesktop.png" alt="">
         <div class="showcase-caption">
@@ -53,14 +50,15 @@
           </div>
         </div>      
       </article>
-      <nav class="fix-wrapper">
+      <div class="fix-wrapper">
         <div class="menu-wrap">
             <input type="checkbox" class="on-off">
             <div class="btn">
                 <img src="./img/HarderWeb_logo_roundwhite-02.png" alt="">
+                <p id="menu-hint">Jeg er en menu</p>
             </div>
               <div class="menu">
-                <svg class="overlay" width="300" height="300" ><circle cx="300" cy="0" r="300" fill="rgba(0, 0, 0, 0.5)" /></svg>
+                <svg class="overlay" width="500" height="500" ><circle cx="500" cy="0" r="500" fill="rgba(0, 0, 0, 0.5)" /></svg>
 
                 <a href="playground.html" class="item-playground"><?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><rect class="cls-1" height="24" width="10" x="4" y="7"/><path class="cls-1" d="M6,1h6a4,4,0,0,1,4,4V7a0,0,0,0,1,0,0H2A0,0,0,0,1,2,7V5A4,4,0,0,1,6,1Z"/><line class="cls-1" x1="4" x2="14" y1="19" y2="19"/><rect class="cls-1" height="6" width="4" x="7" y="10"/><line class="cls-1" x1="4" x2="14" y1="27" y2="27"/><line class="cls-1" x1="4" x2="14" y1="23" y2="23"/><polyline class="cls-1" points="12 19 18 19 28 31 31 31"/><line class="cls-1" x1="18" x2="18" y1="20" y2="31"/><line class="cls-1" x1="23" x2="23" y1="25" y2="31"/></g></svg></a>
 
@@ -75,7 +73,7 @@
                     <p class="menu-text github">Min Github</p>
             </div>
         </div>
-      </nav>
+      </div>
       <footer>
         <img src="./img/FooterWave-01.png" alt="">
         <div class="text-footer">
@@ -87,8 +85,4 @@
     </div> <!-- END CONTAINER-MAIN  -->
   
   </body>
-  <script>setTimeout(function(){
-    document.querySelector('.container-swipe').style.visibility = "visible";
-    },2000);
-    </script>
 </html>

@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 500px;
     /* height: 100%; CONTROLS HOW FAR MENU-ICON SCROLLS DOWN */
   }
   /* TOOGLES MENU ON AND OFF */
@@ -39,8 +39,12 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 25%;
+    width: 40%;
     z-index: 2;
+  }
+  #menu-hint{
+    color: var(--light);
+    text-align: center;
   }
   .menu-wrap .btn img{
     /* position: absolute;
@@ -63,8 +67,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 40px;
-    right: 210px;
+    top: 60px;
+    right: 370px;
     width: 20%;
     height: 20%;
     z-index: 1;
@@ -74,8 +78,8 @@
     stroke-linecap:round;
     stroke-linejoin:round;
     stroke-width:2.5px;
-    width: 50px;
-    height: 40px;
+    width: 100px;
+    height: 80px;
     fill: none;
   }
   .menu-wrap .menu .item-about{
@@ -83,15 +87,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 120px;
-    right: 170px;
+    top: 200px;
+    right: 310px;
     width: 20%;
     height: 20%;
     z-index: 1;
   }
   .menu-wrap .menu .item-about svg{
-    width: 60px;
-    height: 50px;
+    width: 120px;
+    height: 100px;
     fill: var(--blue);
   }
   .menu-wrap .menu .item-codepen{
@@ -99,15 +103,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 200px;
-    right: 110px;
+    top: 330px;
+    right: 220px;
     width: 20%;
     height: 20%;
     z-index: 1;
   }
   .menu-wrap .menu .item-codepen svg{
-    width: 55px;
-    height: 55px;
+    width: 110px;
+    height: 110px;
     fill: var(--blue);
   }
   .menu-wrap .menu .item-github{
@@ -115,26 +119,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 245px;
-    right: 20px;
+    top: 410px;
+    right: 40px;
     width: 20%;
     height: 20%;
     z-index: 1;
   }
   .menu-wrap .menu .item-github svg{
-    width: 55px;
-    height: 55px;
+    width: 110px;
+    height: 110px;
     fill: var(--blue);
   }
   /* PLACES, SIZES AND HIDES ICON-TEXT */
   .menu-text {
     position: absolute;
-    top:110px;
-    right: 20px;
-    width: 110px;
+    top:220px;
+    right: 60px;
+    width: 150px;
     color: var(--light);
     font-family: kodchasan;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
     opacity:0;
@@ -144,6 +148,9 @@
     transform: scale(1);
     transform-origin: top right;
     transition-duration: 1.0s;   
+  }
+  .on-off:checked ~ .btn p{
+    display: none;
   }
   /* CHANGES COLOR OF ICONS ON HOVER */
   .menu-wrap .menu .item-playground:hover svg {
@@ -176,3 +183,4 @@
     transform: rotate(360deg);
     transition-duration: 1.0s;
   }
+ 

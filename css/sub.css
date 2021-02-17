@@ -62,13 +62,13 @@
   }
   .container-header img{
       margin: 1em 2em;
-      height: 15vh;
+      height: 17vh;
   }
   .container-header h1{
       color: var(--light);
       font-size: 4rem;
       letter-spacing: 0.3em;
-      margin: 35px 150px 0 20px;
+      margin: 50px 250px 0 20px;
       justify-self: end;
   }
 
@@ -97,17 +97,17 @@
   grid-template-columns: 1fr 2fr;
   width: 100%;
 }
-.img-wrap1{
+.top-wrap1{
   margin: 3em;
 }
-.img-wrap1 h2{
+.top-wrap1 h2{
 padding: 0 0 1em 0;
 text-align: center;
 font-size: 3rem;
 color: var(--light);
 text-shadow: 1px 1px black;
 }
-.img-wrap1 img{
+.top-wrap1 img{
   display: block;
   margin: auto;
   padding: 1em;
@@ -209,6 +209,10 @@ footer{
   font-size: 3rem;
   text-align: center;
 }  
+.container-header img{
+  margin: 1em 2em;
+  height: 12vh;
+}
 .contact-info{
   display: block;
   width: 100%;
@@ -219,11 +223,14 @@ footer{
 .about{
   display: block;
 }
-.img-wrap1 img{
-  margin: auto;
+.img-wrap1{
+  display: flex;
+  justify-content: center;
+}
+.top-wrap1 img{
   display: inline;
   width: 90px;
-  padding: 0;
+  margin: 0 2em;
 }
 .text-wrap1 p{  
   margin: 0;
