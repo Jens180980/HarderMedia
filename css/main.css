@@ -181,6 +181,9 @@ footer img{
   color:var(--light);
   text-align: center;
 }
+footer a{
+  color: var(--orange);
+}
 
 /*********************
      MEDIA QUERIES
