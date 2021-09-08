@@ -200,6 +200,12 @@ footer img{
 footer a{
   color: var(--orange);
 }
+#thispage-git {
+  text-align: center;
+  display: block;
+  color:#ff6600;
+  font-size: 2rem;
+}
 
 /*********************
      MEDIA QUERIES
