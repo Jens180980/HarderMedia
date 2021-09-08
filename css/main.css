@@ -161,6 +161,22 @@ article h1{
 #indent{
   margin-left: 14em;
 }
+
+/*********************
+     HERO SECTION PLAYGROUND 
+**********************/
+
+.container-hero {
+  width: 100vw;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.container-hero img {
+  width: 100%;
+}
+
+
 /*********************
      FOOTER 
 **********************/

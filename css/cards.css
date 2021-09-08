@@ -4,7 +4,7 @@
     grid-gap: 2vw;
     width: 80vw;
     margin: auto;
-    perspective: 300px;
+    perspective: 500px;
     transform-style: preserve-3d;
 }
 .card{
@@ -50,6 +50,9 @@
     height: 350px;
     width: 100%;
     background-color: var(--blue);
+}
+.insert-image-vertical img {
+    height: 80%;
 }
 span{
     width: 15px;

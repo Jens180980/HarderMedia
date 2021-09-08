@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/sub.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/parallax.css">
     <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/ab6c1254a5.js" crossorigin="anonymous"></script>
-    <title>Playground | HarderWeb | Web, apps, grafik</title>
+    <title>Playground | HarderWeb | Webapps</title>
   </head>
   <body>
     
@@ -27,66 +27,68 @@
         <a href="index.html"><img src="./img/HM_logo_LongBigWhite.png" alt=""></a>
         <h1>Playground</h1>
       </div>
-      <div class="container-parallax">
-        <section id="back">
-        </section>
-        <section id="front">
-        </section>
-        <section id="car">
-        </section>
-        <section id="welcome">
-            <h2>Velkommen til min sandkasse</h2>
-        </section>
+      <div class="container-hero">
+        <img src="./img/pexels-kindel-media-7862529.jpg" alt="sandkasse">
     </div>
-    <h2 id="skills">Her tester jeg mine evner</h2>
+    <h2 id="skills">Her showcaser jeg lidt af mine evner</h2>
+
     <section class="cards-wrapper">
+
       <figure class="card vertical">
-        <div class="pop-out disc">70% off!</div>
-        <div class="insert-image-vertical"></div>
+        <div class="pop-out disc">JS Val</div>
+        <div class="insert-image-vertical"><img src="./img/codepen_formVal.jpg" alt=""></div>
         <figcaption>
-            <h2>Some header</h2>
-            <h3>Some subtitle</h3>
+            <h2>Formvalidering</h2>
+            <h3>Simpel formvalidering med JS</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat amet impedit voluptate, sed quae laborum quidem nam suscipit numquam aspernatur. <a href="#">Details</a></p>
             <p class="inline">Colors:</p><span class="first-disc disc"></span><span class="second-disc disc"></span><span class="third-disc disc"></span>
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li><a href="https://codepen.io/jens180980/pen/XWpPzmO" target="_blank">Codepen</a></li>
             </ul>
         </figcaption>
     </figure>
     <figure class="card vertical">
-      <div class="pop-out disc">70% off!</div>
-      <div class="insert-image-vertical"></div>
+      <div class="pop-out disc">CSS Anim</div>
+      <div class="insert-image-vertical"><img src="./img/codepen_bouncingLoader.jpg" alt=""></div>
       <figcaption>
-          <h2>Some header</h2>
-          <h3>Some subtitle</h3>
+          <h2>Pageloader</h2>
+          <h3>CSS animationer</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat amet impedit voluptate, sed quae laborum quidem nam suscipit numquam aspernatur. <a href="#">Details</a></p>
           <p class="inline">Colors:</p><span class="first-disc disc"></span><span class="second-disc disc"></span><span class="third-disc disc"></span>
           <ul>
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
+              <li><a href="https://codepen.io/jens180980/pen/wvdVyGO" target="_blank">Codepen</a></li>
           </ul>
       </figcaption>
   </figure>
   <figure class="card vertical">
-    <div class="pop-out disc">70% off!</div>
-    <div class="insert-image-vertical"></div>
+    <div class="pop-out disc">CSS Anim</div>
+    <div class="insert-image-vertical"><img src="./img/codepen_firstAnimation.jpg" alt=""></div>
     <figcaption>
-        <h2>Some header</h2>
-        <h3>Some subtitle</h3>
+        <h2>Animeret ramme</h2>
+        <h3>Min første CSS animation</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat amet impedit voluptate, sed quae laborum quidem nam suscipit numquam aspernatur. <a href="#">Details</a></p>
         <p class="inline">Colors:</p><span class="first-disc disc"></span><span class="second-disc disc"></span><span class="third-disc disc"></span>
         <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
+            <li><a href="https://codepen.io/jens180980/pen/dyOvZNo" target="_blank">Codepen</a></li>
         </ul>
     </figcaption>
 </figure>
   </section>
-      <div class="content-wrapper">
+      
+  <section id="weather" class="content-wrapper">
+      <h2>Vejret lige nu i Nuuk, Grønland</h2>
+      <div id="weatherData-wrap">
+        <h3>Temperatur</h3>
+        <h3>Nedbør</h3>
+        <h3>Lufttryk</h3>
+        <p id="temp">Afventer data...</p>
+        <p id="pluv">Afventer data...</p>
+        <p id="press">Afventer data...</p>
+      </div>
+  </section>
+
+  <div class="content-wrapper">
+
         <div class="construction">
             <img src="./img/under-construction.svg" alt="">
             <p>Denne side er under konstruktion. Tak for tålmodigheden</p>
@@ -129,6 +131,7 @@
             </div>
         </div>
       </div>
+
       <!-- /*****************
          FOOTER
       ******************/ -->
